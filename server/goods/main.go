@@ -70,7 +70,7 @@ func main() {
 	}
 
 	//2.监听服务
-	listener, err := net.Listen("tcp", "127.0.0.1:9999")
+	listener, err := net.Listen("tcp", "localhost:8080")
 	if err != nil {
 		panic(err)
 	}

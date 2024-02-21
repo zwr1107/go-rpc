@@ -44,7 +44,7 @@ func main() {
 		panic(err)
 	}
 
-	//关闭连接
+	//关闭链接 defer 语句会在函数执行到最后的时候执行,所以这里会在main函数执行完毕的时候关闭链接
 	defer conn.Close()
 
 	//定义返回值
